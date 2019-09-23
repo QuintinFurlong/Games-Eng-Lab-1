@@ -2,6 +2,7 @@
 #include <vector>
 #include "AbstractFactory.h"
 #include "Bridge.h"
+#include "GraphicProxy.h"
 
 int main()
 {
@@ -18,6 +19,12 @@ int main()
 	delete characters.at(0);
 	delete characters.at(1);
 
+	system("pause");
+	return 0;
+}
+
+int main2()
+{
 	DrawAPI* api = new DrawImp1();
 	Character2* character2 = new Player2(api);
 	character2->Draw();
@@ -26,4 +33,10 @@ int main()
 
 	system("pause");
 	return 0;
+}
+
+int main3()
+{
+	GraphicProxy gp;
+	gp.Draw();
 }

@@ -125,8 +125,13 @@
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="Bridge.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="GraphicProxy.h" />
+    <ClInclude Include="IGraphic.h" />
+    <ClInclude Include="Proxy.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
